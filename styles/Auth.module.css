@@ -1,0 +1,113 @@
+.authContainer {
+    margin: 10vh auto;
+    border: 1px solid rgba(0, 0, 0, 0.085);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.033);
+    max-width: 450px;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.authContainer h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.authContainer .sectionDouble {
+    display: flex;
+    justify-content: space-between;
+}
+
+.authContainer .sectionDouble .box {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.authContainer .section {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.authContainer .sectionDouble label,
+.authContainer .section label {
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+.authContainer .sectionDouble .box input,
+.authContainer .section input,
+.authContainer .section .passwordContainer input {
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.180);
+    border-radius: 5px;
+    transition: border 200ms ease;
+}
+
+.authContainer .section .passwordContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.authContainer .section .passwordContainer input {
+    padding-right: 35px;
+}
+
+.authContainer .section .passwordContainer input:focus + .togglePasswordBtn svg {
+    fill: rgba(0, 85, 255, 0.380);
+}
+
+.authContainer .section .passwordContainer .togglePasswordBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 5px;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.authContainer .section .passwordContainer .togglePasswordBtn svg {
+    width: 100%;
+    height: 100%;
+    fill: rgba(0, 0, 0, 0.575);
+    transition: fill 200ms ease;
+}
+
+.authContainer .sectionDouble .box input:focus,
+.authContainer .section input:focus {
+    border: 1px solid rgba(0, 85, 255, 0.380);
+}
+
+.authContainer .submit {
+    background-color: #212121;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: opacity 200ms ease;
+}
+
+.authContainer .submit:hover {
+    opacity: 0.9;
+}
+
+.authContainer .text {
+    text-align: center;
+}
