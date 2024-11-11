@@ -1,6 +1,6 @@
 .navbar {
     height: 70px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.200);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,29 +14,24 @@
     list-style: none;
 }
 
-.navbar .links li a {
+.navbar .links li .profilBtn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
-    font-weight: 600;
+    border-radius: 50%;
     text-decoration: none;
     color: black;
-    background-color: white;
-    border: 1px solid black;
-    height: 25px;
-    width: 110px;
-    align-items: center;
-    border-radius: 10px;
-    transition: background-color 200ms ease;
+    background-color: rgba(0, 0, 0, 0.265);
+    transition: opacity 200ms ease;
 }
 
-.navbar .links li a svg {
-    width: 70%;
-    height: 70%;
+.navbar .links li .profilBtn svg {
+    width: 60%;
+    height: 60%;
 }
 
-.navbar .links li a:hover {
-    background-color: rgb(212, 212, 212);
+.navbar .links li .profilBtn:hover {
+    opacity: 0.7;
 }

@@ -8,7 +8,7 @@ export default function Navbar() {
             <h1>AD Location</h1>
 
             <ul className={styles.links}>
-                <li><a href="login"><LoginLogo /> Connexion</a></li>
+                <li><a className={styles.profilBtn} href="login"><LoginLogo /></a></li>
             </ul>
         </nav>
     );
