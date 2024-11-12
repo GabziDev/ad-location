@@ -10,7 +10,7 @@ export default function Hero() {
                     <a href='louer'>Louer !</a>
                 </div>
                 <div className={styles.right}>
-                    <img src='/hero.png'></img>
+                    <img src='/images/hero.png'></img>
                 </div>
             </div>
         </div>
