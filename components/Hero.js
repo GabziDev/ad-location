@@ -6,7 +6,7 @@ export default function Hero() {
             <div className={styles.content}>
                 <div className={styles.left}>
                     <h1>Louez une voiture<br></br>facilement et rapidement !</h1>
-                    <p>Profitez d’une réservation simplifiée en quelques clics !</p>
+                    <p>Profitez d’une réservation simplifiée en quelques clics</p>
                     <a href='louer'>Louer !</a>
                 </div>
                 <div className={styles.right}>
