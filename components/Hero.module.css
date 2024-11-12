@@ -1,6 +1,163 @@
 .hero {
     display: flex;
     justify-content: center;
+    height: 600px;
+    margin: auto;
+    background-color: rgb(24, 24, 24);
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .content .left {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin: auto;
+}
+
+.hero .content .left h1 {
+    color: rgba(255, 255, 255, 0.783);
+    font-size: 40px;
+    margin-right: auto;
+}
+
+.hero .content .left p {
+    color: rgba(255, 255, 255, 0.783);
+    margin-right: auto;
+}
+
+.hero .content .left a {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #0061ca;
+    max-width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 70vh;
+    border-radius: 10px;
+    transition: all 300ms ease;
+    font-size: 18px;
+}
+
+.hero .content .left a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.hero .content .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 47%;
+}
+
+
+.hero .content .right img {
+    height: 400px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1330px) {
+    .hero .content .right img {
+        height: 350px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .hero .content .right img {
+        height: 300px;
+        margin: auto;
+    }
+
+    .hero .content .left h1 {
+        font-size: 35px;
+    }
+    
+    .hero .content .left a {
+        max-width: 130px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        height: 450px;
+    }
+
+    .hero .content {
+        flex-direction: column;
+    }
+
+    .hero .content .left {
+        margin: 10px auto;
+        width: 50%;
+    }
+
+    .hero .content .left h1,
+    .hero .content .left p {
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero .content .left a {
+        width: 130px;
+        height: 40px;
+        margin: 20px auto;
+    }
+
+    .hero .content .right {
+        margin: auto;
+        width: 50%;
+    }
+
+    .hero .content .right img {
+        height: 250px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .hero .content .left {
+        width: 80%;
+
+    }
+
+    .hero .content .left h1 {
+        font-size: 30px;
+    }
+
+    .hero .content .right {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero .content .left {
+        width: 100%;
+    }
+
+    .hero .content .left h1 {
+        font-size: 25px;
+    }
+
+    .hero .content .right {
+        width: 100%;
+    }
+
+    .hero .content .right img {
+        height: 200px;
+        margin: auto;
+    }
 }

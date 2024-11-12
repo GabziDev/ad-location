@@ -21,7 +21,7 @@ export default function Home() {
             </Head>
             <div>
                 <div className={styles.authContainer}>
-                    <h1>Inscriptions</h1>
+                    <h1>Inscription</h1>
                     <div className={styles.sectionDouble}>
                         <div className={styles.box}>
                             <label>Prénom</label>
